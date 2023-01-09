@@ -1,4 +1,4 @@
-public class Cycle {
+public class CyclePart1 {
     public static void main(String[] args) {
         task1();
         task2();
