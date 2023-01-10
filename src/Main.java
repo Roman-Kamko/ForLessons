@@ -54,12 +54,11 @@ public class Main {
             System.out.println(str);
         }
 
-
-
+        System.out.printf("%,+.2f", 10_000.0 / 4.0);
     }
 
     public static void exercise3() {
-        /*System.out.println("Упражнение ...");
+        System.out.println("Упражнение ...");
         // Условные операторы
         int one = 10;
         int two = 10;
@@ -74,6 +73,34 @@ public class Main {
             System.out.println(two);
         } else {
             System.out.println(three);
-        }*/
+        }
+
+        int yourSales = 1_400_000;
+        int target = 750_000;
+
+        if (yourSales >= target * 2) {
+            System.out.println("Excellent, your bonus 1 000");
+        } else if (yourSales >= target * 1.5) {
+            System.out.println("Fine, your bonus 500");
+        } else if (yourSales >= target) {
+            System.out.println("Satisfactory, your bonus 100");
+        } else {
+            System.out.println("You're fired");
+        }
+
+        int balance = 0;
+        int goal = 1_000_000;
+        int payment = 100_000;
+        int interestRate = 10;
+        int years = 0;
+
+        while (balance < goal) {
+            balance += payment;
+            double interest = balance * interestRate / 100.0;
+            balance += interest;
+            years++;
+            System.out.println(years + " year." + balance);
+        }
+        System.out.println(years + " years.");
     }
 }
