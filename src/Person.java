@@ -7,20 +7,30 @@ public class Person {
         this.age = age;
     }
 
+    public boolean isAdult() {
+        return getAge() > 18;
+    }
+
     public String getName() {
-        return this.name;
+        return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public int getAge() {
-        return this.age;
+    public void increaseAge(int increment) {
+        if (increment < 0) {
+            throw new IllegalArgumentException("Инкремент не может быть отрицательным");
+        }
+        this.age = age + increment;
     }
 
-
-    public void setAge(int age) {
-        this.age = age;
+    public String toString() {
+        return "Имя " + this.getName() + " возраст " + this.getAge();
     }
 }
