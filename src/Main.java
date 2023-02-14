@@ -1,20 +1,25 @@
+
 public class Main {
-
-
     public static void main(String[] args) {
-        /*Person sarah = new  Person ("Sarah", 30);
-        System.out.println("sarah.name = " + sarah.getName());
-        System.out.println("sarah.age = " + sarah.getAge());
-        sarah.setAge(31);
-        System.out.println("sarah.getAge() = " + sarah.getAge());
-        Person john = new Person("John", 13);*/
-        PersonService personService = new PersonService();
-        Person sarah = new Person("Sarah", 30);
-        if (personService.isAdult(sarah)) {
-            System.out.println("Иди в бар");
+        String str = "мир озарим и разорим";
+        str = str.replace(" ", "");
+        StringBuilder stringBuilder = new StringBuilder(str);
+        boolean stringIsPolindrom = stringBuilder.reverse()
+                                    .toString().equals(str);
+        if (stringIsPolindrom == true) {
+            System.out.println("строка является полиндромом");
         } else {
-            System.out.println("Иди в школу");
+            System.out.println("строка не является полиндромом");
         }
-        System.out.println(sarah);
+
+        System.out.println("--------------------------------------------");
+
+        String string = "мир озарим и разорим";
+        int mid = string.length() / 2;
+        String[] part = {string.substring(0, mid), string.substring(mid)};
+        System.out.println(part[0]);
+        System.out.println(part[1]);
+
+        System.out.println("--------------------------------------------");
     }
 }
