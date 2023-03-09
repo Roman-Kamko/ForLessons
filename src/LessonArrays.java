@@ -1,9 +1,12 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class LessonArrays {
     public static void main(String[] args) {
         int[] weights = {90, 91, 93, 92, 85, 87, 88, 89, 0, 0, 0, 0};
         int[] weightsCopy = {902, 91, 93, 92, 85, 87, 88, 89, 0, 0, 0, 0};
 
-        boolean arraysAreEqual = true;
+        /*boolean arraysAreEqual = true;
         arraysAreEqual = weights.length == weightsCopy.length;
         if (arraysAreEqual) {
             for (int i = 0; i < weights.length; i++) {
@@ -29,6 +32,7 @@ public class LessonArrays {
 
         for (int i = 0; i < weights.length - 1 && weights[i + 1] != 0; i++) {
             System.out.println(weights[i + 1] - weights[i]);
-        }
+        }*/
+
     }
 }
